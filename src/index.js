@@ -2,7 +2,6 @@ import './index.css';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './components/App';
-import logo from '../assetts/logo.svg';
 import * as serviceWorker from '../src/helpers/serviceWorker';
 
 ReactDOM.render(
@@ -12,26 +11,7 @@ ReactDOM.render(
   document.getElementById('root')
 );
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.

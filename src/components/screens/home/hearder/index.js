@@ -1,17 +1,25 @@
-import './index.css';
-import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
-
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
-
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+import './index.css'
+import React from 'react'
+import Home from '../index'
+import Form from '../../form'
+import {BrowserRouter, Route,Switch, Link} from 'react-router-dom'
+function header (){
+  
+  return(
+  <BrowserRouter>
+    <div className="header">
+      <ul>
+        <li Link to='home'>Home <Home/></li>
+        <li Link to='form'>Formulario <Form/></li>
+        <li>Contacto</li>
+      </ul>
+    </div>
+    <Route path='home'/>
+    <Route path='form'/>
+  </BrowserRouter>
+   
+     
+  )
+  
+}
+export default header;

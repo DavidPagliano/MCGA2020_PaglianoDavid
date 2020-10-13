@@ -1,5 +1,21 @@
-main{
-    height: 500px;
-    width: 600px;
-    background: #f045f0;
+
+
+.main{
+    display: flexbox;
+    height: 850px;
+    width: 1319px;
+    background: #B0304D;
+    border: 10px 10px 10px 10px;
+    border-radius: 5px 1px 5px 1px;
+    border-color: #18090c;
+}
+
+.footer{
+    display: flexbox;
+    height: 50px;
+    width: 1319px;
+    background: #B0304D;
+    border: 10px 10px 10px 10px;
+    border-radius: 5px 1px 5px 1px;
+    border-color: #18090c;
 }
