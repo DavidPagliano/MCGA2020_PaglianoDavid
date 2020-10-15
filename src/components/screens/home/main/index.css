@@ -1,7 +1,0 @@
-body{
-  display: flexbox;
-  flex-direction: column;
-  height: 400px;
-  width: 600px;
-  background: rgb(48, 140, 176);
-}

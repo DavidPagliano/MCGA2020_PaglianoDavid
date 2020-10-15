@@ -2,6 +2,7 @@ import './App.css';
 import React from 'react';
 import {BrowserRouter, Route,Switch, Link} from 'react-router-dom'
 import Home from './screens/home'
+import Counter from './screens/counter'
 
 
 class App extends React.Component {
@@ -17,6 +18,7 @@ class App extends React.Component {
             <Home/>
         </div>
         <Route path='home'><Home/></Route>
+        <Route path='counter'><Counter/></Route>
       </BrowserRouter>
     );
   }
